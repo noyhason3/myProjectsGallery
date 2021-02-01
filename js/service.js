@@ -1,30 +1,42 @@
-'use strict'
+var gProjs = [
+  {
+    id: 'touch-nums',
+    name: 'Touch-Nums',
+    title: 'How fast can you find your number?',
+    desc: 'Be as fast as you can and click each number by order. Many levels.',
+    url: ' https://noyhason3.github.io/touch-nums/',
+    publishedAt: 1610751294000,
+    labels: ['numbers', ' '],
+  },
+  {
+    id: 'in-picture',
+    name: 'In-Picture',
+    title: 'What do you see in the pic',
+    desc: 'A nice game, mostly for children. Get to know objects by looking at the pic and choose its right name.',
+    url: 'https://noyhason3.github.io/in-picture/',
+    publishedAt: 1610751295000,
+    labels: ['picture', ' '],
+  },
+  {
+    id: 'minesweeper',
+    name: 'Minesweeper',
+    title: 'Improved Minesweeper ',
+    desc: 'A very improved minesweeper, many features are added to this game made it unusual FUN!',
+    url: 'https://noyhason3.github.io/noyhason3-CodingAcademy-Sprint1-NoyHason/',
+    publishedAt: 1611442494000,
+    labels: ['Matrixes', 'Mines'],
+  },
+  {
+    id: 'books-shop',
+    name: 'Books-Shop',
+    title: 'Take a look in our books',
+    desc: 'Our books store is unique. We have special books in special prices, TAKE A LOOK!',
+    url: 'https://noyhason3.github.io/books-shop/',
+    publishedAt: 1611848317000,
+    labels: ['books', 'store'],
+  },
+];
 
-function onInit(){
-    renderPortfolio();
-}
-
-function renderPortfolio(){
-    var projs = getProjs();
-    var strHtml = ''
-
-    for (var i= 0; i<projs.length;i++){
-        strHtml += `<div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal${i+1}">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
-            </div>
-          </div>
-          <img class="img-fluid" src="img/portfolio/0${i+1}-thumbnail.jpg" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>${projs[i].name}</h4>
-          <p class="text-muted">${projs[i].labels}</p>
-        </div>
-      </div>`
-    }
-    var $elPortfolios = $('.portfolios')
-    $elPortfolios.html(strHtml)
-
+function getProjs() {
+  return gProjs;
 }

@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.toolbar {
+  background-color: white;
+  width: 100%;
+  box-shadow: 7px 7px 19px 6px rgba(104, 104, 104, 0.74);
+}
+
+h1 {
+  font-size: 44px;
+  padding: 10px;
+  text-align: center;
+}
+
+.game-info {
+  float: left;
+  width: 20%;
+  flex-direction: column;
+  margin-left: 90px;
+  text-align: start;
+}
+
+.game-info > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.board-container {
+  width: 20em;
+  height: 20em;
+  background: linear-gradient(90deg, #4364f7c4 0%, #6fb1fccb 100%);
+  box-shadow: 3px 3px 19px 6px rgba(104, 104, 104, 0.74);
+  border-radius: 7px;
+  margin-top: 50px;
+  display: inline-table;
+}
+
+.timer {
+  margin-right: 200px;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
+
+tbody {
+  justify-content: center;
+}
+
+.cell {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.cell:hover {
+  background-color: #4364f748;
+  cursor: pointer;
+}
+
+.shown {
+  background-color: rgba(104, 104, 104, 0.514);
+}
+.shown:hover {
+  background-color: rgba(104, 104, 104, 0.514);
+  cursor: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td {
+  border: 2px solid white;
+}
+table tr:first-child td {
+  border-top: 0;
+}
+table tr td:first-child {
+  border-left: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}
+
+.safe-cell {
+  background-color: white;
+}
+
+.game-tools {
+  float: right;
+  text-align: center;
+  width: 450px;
+  height: 500px;
+  margin-right: 60px;
+}
+
+.game-tools > div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hints {
+  width: 50px;
+  height: 150px;
+  float: left;
+  cursor: pointer;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+.game-starter {
+  border: rgb(252, 0, 0) solid 6px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-left: 90px;
+  cursor: pointer;
+}
+.game-starter:hover{
+  background-color: rgb(240, 185, 140);
+}
+
+.game-tools button {
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 5px;
+  border: dotted;
+}
+
+.safe-click-count {
+  font-size: 18px;
+  padding-bottom: 45px;
+}
+
+.modal-container {
+  display: none;
+  width: 100%;
+  height: 10rem;
+  font-size: 32px;
+  padding: 30px;
+  background-color: rgb(167, 167, 167);
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background: linear-gradient(90deg, #4364f7bb 0%, #6fb1fc 100%);
+  box-shadow: 3px 3px 19px 3px white(104, 104, 104, 0.74);
+  color: rgba(255, 255, 255, 0.849);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+.levels-container button {
+  width: 150px;
+  margin: 20px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+button.restart {
+  margin-top: 1rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+button:hover{
+  background-color: rgb(0, 0, 0);
+}
